@@ -1,2 +1,2 @@
 # rocnikova-prace
-Ročníková práce za 2. ročník. Hra inspirovaná českou hrou Polda.
+Ročníková práce za 2. ročník. Téma: hra inspirovaná českou hrou Polda.

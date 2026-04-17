@@ -5,7 +5,7 @@ Hra byla vytvořena pomocí jazyku [doplnit později]
 
 ## 📝 CHANGELOG:
 
-* 17.04.2026 - vymyšlen příběh - zahájení práce na menu
+* 17.04.2026 - vymyšlen základní příběh & zahájení práce na menu
 
 ## 📔 PŘÍBĚH (Inspirace: Vodník od Erbena, detailní koncept pomocí AI):
 ### 🧩 ZÁKLADNÍ PREMISA

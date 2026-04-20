@@ -6,6 +6,7 @@ Hru vytvářím za pomocí jazyku C# a WPF.
 ## 📝 CHANGELOG:
 
 * 17.04.2026 - vymyšlen základní příběh & zahájení práce na menu
+* 20.04.2026 - komplet dodělané UI (mimo in-game tlačítek), zahájení práce na zvuku
 
 ## 📔 PŘÍBĚH (Inspirace: Vodník od Erbena, detailní koncept pomocí AI):
 ### 🧩 ZÁKLADNÍ PREMISA

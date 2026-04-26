@@ -1,0 +1,50 @@
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.exe
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.deps.json
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.runtimeconfig.json
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.dll
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.pdb
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\MainWindow.g.cs
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\App.g.cs
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1_MarkupCompile.cache
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1_MarkupCompile.lref
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\MainWindow.baml
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.g.resources
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.GeneratedMSBuildEditorConfig.editorconfig
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.AssemblyInfoInputs.cache
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.AssemblyInfo.cs
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.CoreCompileInputs.cache
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.dll
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\refint\WpfApp1.dll
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.pdb
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.genruntimeconfig.cache
+H:\PRG\2. Ročník\Závěrečný projekt\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\ref\WpfApp1.dll
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.exe
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.deps.json
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.runtimeconfig.json
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.dll
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\WpfApp1.pdb
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\NAudio.dll
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\NAudio.Asio.dll
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\NAudio.Core.dll
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\NAudio.Midi.dll
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\NAudio.Wasapi.dll
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\NAudio.WinForms.dll
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\bin\Debug\net8.0-windows\NAudio.WinMM.dll
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.AssemblyReference.cache
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1_MarkupCompile.cache
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1_MarkupCompile.lref
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.g.resources
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.AssemblyInfoInputs.cache
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.AssemblyInfo.cs
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.sourcelink.json
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.csproj.Up2Date
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.dll
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\refint\WpfApp1.dll
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.pdb
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.genruntimeconfig.cache
+C:\Users\František\source\repos\seznam-pes\rocnikova-prace\WpfApp1\obj\Debug\net8.0-windows\ref\WpfApp1.dll

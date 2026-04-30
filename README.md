@@ -9,6 +9,10 @@ Hru vytvářím za pomocí jazyku C# a WPF.
 * 20.04.2026 - komplet dodělané UI (mimo in-game tlačítek), zahájení práce na zvuku
 * 26.04.2026 - přidána možnost upravovat velikost okna
 
+## ✅ TO-DO:
+* vytvořit save system (pomocí podmínek a file.writetext file.readtext (podle progressu napsat do save souboru číslo scény hry, potom podle switche nastavit pozadí a dialogy toto bazmek)
+* vytvořit příběh, storyline
+
 ## 📔 PŘÍBĚH (Inspirace: Vodník od Erbena, detailní koncept pomocí AI):
 ### 🧩 ZÁKLADNÍ PREMISA
 

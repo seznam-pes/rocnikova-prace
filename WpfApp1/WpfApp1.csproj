@@ -18,13 +18,18 @@
 
   <ItemGroup>
     <PackageReference Include="NAudio" Version="2.3.0" />
+
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="button.png" />
     <Resource Include="img\button.png" />
     <Resource Include="img\placeholder.png" />
+
+    <Resource Include="img\0\backdrop.png"/>
+
     <Resource Include="img\scene1.png">
+
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

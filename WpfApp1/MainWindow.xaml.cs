@@ -11,6 +11,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -27,11 +28,104 @@ namespace WpfApp1
             InitializeComponent();
         }
 
+        int progress = 0;
+        string str_progress = "0";
+
+        public void WriteSave()
+        {
+            str_progress = progress.ToString();
+            File.WriteAllText("save.json", str_progress);
+        }
+
+        public void ReadSave()
+        {
+            try
+            {
+                string tempstr = File.ReadAllText("save.json");
+                progress = int.Parse(tempstr);
+            }
+            catch (FileNotFoundException)
+            {
+                File.WriteAllText("save.json", "");
+            }
+        }
+
+        public void FadeIn(Action? onComplete = null)
+        {
+            rect.Visibility = Visibility.Visible;
+            rect.Opacity = 0;
+
+            var anim = new DoubleAnimation
+            {
+                From = 0,
+                To = 1,
+                Duration = TimeSpan.FromSeconds(3),
+                EasingFunction = new QuadraticEase
+                {
+                    EasingMode = EasingMode.EaseOut
+                }
+            };
+
+            anim.Completed += (s, e) =>
+            {
+                onComplete?.Invoke();
+            };
+
+            rect.BeginAnimation(UIElement.OpacityProperty, anim);
+        }
+
+        public void FadeOut(Action? onComplete = null)
+        {
+            var anim = new DoubleAnimation
+            {
+                From = 1,
+                To = 0,
+                Duration = TimeSpan.FromSeconds(3),
+                EasingFunction = new QuadraticEase
+                {
+                    EasingMode = EasingMode.EaseOut
+                }
+            };
+
+            anim.Completed += (s, e) =>
+            {
+                rect.Visibility = Visibility.Collapsed;
+            };
+
+            rect.BeginAnimation(UIElement.OpacityProperty, anim);
+        }
+
+        public void SwitchScene()
+        {
+            FadeIn();
+            progress++;
+            WriteSave();
+            Thread.Sleep(3000);
+            FadeOut();
+        }
+
+        public void NewGame_Click(object sender, RoutedEventArgs e)
+        {
+            FadeIn(() =>
+            {
+                title_menu.Visibility = Visibility.Collapsed;
+                pozadi.Source = new BitmapImage(new Uri("pack://application:,,,/img/0/backdrop.png"));
+                game.Visibility = Visibility.Visible;
+                FadeOut();
+            });
+            File.WriteAllText("save.json", "0");
+        }
+
         public void Launch_Click(object sender, RoutedEventArgs e)
         {
-            pozadi.Source = new BitmapImage(new Uri("pack://application:,,,/img/scene1.png"));
-            title_menu.Visibility = Visibility.Collapsed;
-            game.Visibility = Visibility.Visible;
+            ReadSave();
+            FadeIn(() =>
+            {
+                title_menu.Visibility = Visibility.Collapsed;
+                pozadi.Source = new BitmapImage(new Uri($"pack://application:,,,/img/{progress}/backdrop.png"));
+                game.Visibility = Visibility.Visible;
+                FadeOut();
+            });
         }
 
         public void Continue_Click(object sender, RoutedEventArgs e)
@@ -41,6 +135,7 @@ namespace WpfApp1
 
         public void Quit_Click(object sender, RoutedEventArgs e)
         {
+            WriteSave();
             Application.Current.Shutdown();
         }
 

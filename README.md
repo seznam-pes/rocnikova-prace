@@ -11,7 +11,6 @@ Hru vytvářím za pomocí jazyku C# a WPF.
 * 01.05.2026 - save systém, redesign menu, přechody z menu
 
 ## ✅ TO-DO:
-* vytvořit save system (pomocí podmínek a file.writetext file.readtext (podle progressu napsat do save souboru číslo scény hry, potom podle switche nastavit pozadí a dialogy toto bazmek)
 * vytvořit příběh, storyline
 
 ## 📔 PŘÍBĚH (Inspirace: Vodník od Erbena, detailní koncept pomocí AI):

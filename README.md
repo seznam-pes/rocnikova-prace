@@ -8,6 +8,7 @@ Hru vytvářím za pomocí jazyku C# a WPF.
 * 17.04.2026 - vymyšlen základní příběh & zahájení práce na menu
 * 20.04.2026 - komplet dodělané UI (mimo in-game tlačítek), zahájení práce na zvuku
 * 26.04.2026 - přidána možnost upravovat velikost okna
+* 01.05.2026 - save systém, redesign menu, přechody z menu
 
 ## ✅ TO-DO:
 * vytvořit save system (pomocí podmínek a file.writetext file.readtext (podle progressu napsat do save souboru číslo scény hry, potom podle switche nastavit pozadí a dialogy toto bazmek)

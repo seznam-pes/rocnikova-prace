@@ -27,7 +27,24 @@ Hru vytvářím za pomocí jazyku C# a WPF.
 🧍 Stará paní na ulici *(NPC)* \
 🧍 Random NPCs v hospodě
 
+---
+
 ### Scéna 2:
+📍 Les \
+📍 Mlýn \
+📍 Rybník 1 *(vodníkův "soused")* \
+📍 Rybník 2 *(real vodník)*
+
+📦 Rozcestník v lese \
+📦 Zvonek na vodníka *(návnada, dostane od pána v lese)* \
+
+🧍 Mlynář \
+🧍 Vodníkův soused \
+🧍 Starý pán v lese, sbírá houby
+
+---
+
+### Scéna 3:
 
 ## 📔 PŘÍBĚH (Inspirace: Vodník od Erbena, detailní koncept pomocí AI):
 ### 🧩 ZÁKLADNÍ PREMISA

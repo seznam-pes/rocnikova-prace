@@ -13,6 +13,22 @@ Hru vytvářím za pomocí jazyku C# a WPF.
 ## ✅ TO-DO:
 * vytvořit příběh, storyline
 
+## 🖼️ SCÉNY:
+### Scéna 1:
+📍 Vesnice - náměstí \
+📍 Dům zmizelé dívky \
+📍 Hospoda
+
+📦 Dopis od vodníka \
+📦 Klíč od domu rodiny zmizelé dívky *(v tom domě najde ten dopis, po přečtení se objeví matka, bude vystrašená že co dělá hráč v jejím domě. hráč jí vvysvětlí že je detektiv, pak mezi nimi začne dialog)*
+
+🧍 Matka dívky \
+🧍 Hospodský \
+🧍 Stará paní na ulici *(NPC)* \
+🧍 Random NPCs v hospodě
+
+### Scéna 2:
+
 ## 📔 PŘÍBĚH (Inspirace: Vodník od Erbena, detailní koncept pomocí AI):
 ### 🧩 ZÁKLADNÍ PREMISA
 

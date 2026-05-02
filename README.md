@@ -10,8 +10,6 @@ Hru vytvářím za pomocí jazyku C# a WPF.
 * 26.04.2026 - přidána možnost upravovat velikost okna
 * 01.05.2026 - save systém, redesign menu, přechody z menu
 
-## ✅ TO-DO:
-* vytvořit příběh, storyline
 
 ## 🖼️ SCÉNY:
 ### Scéna 1:
@@ -27,6 +25,8 @@ Hru vytvářím za pomocí jazyku C# a WPF.
 🧍 Stará paní na ulici *(NPC)* \
 🧍 Random NPCs v hospodě
 
+🧩 Dopis bude zamčený v sejfu, který bude zakódovaný. Kód bude napsaný na papírku vedle sejfu, ten bude však zašifrovaný skrze čísla (např. kód bude "ahoj", šifra bude "246665"). Dopis pak řekne hráči kudy jít.
+
 ---
 
 ### Scéna 2:
@@ -35,12 +35,14 @@ Hru vytvářím za pomocí jazyku C# a WPF.
 📍 Rybník 1 *(vodníkův "soused")* \
 📍 Rybník 2 *(real vodník)*
 
-📦 Rozcestník v lese \
-📦 Zvonek na vodníka *(návnada, dostane od pána v lese)* \
+📦 Mapa lesa \
+📦 Zvonek na vodníka *(návnada, dostane od pána v lese)*
 
-🧍 Mlynář \
+🧍 Mlynář *(dá hráči mapu)*\
 🧍 Vodníkův soused \
 🧍 Starý pán v lese, sbírá houby
+
+🧩 Mapa bude ve stylu "vždy běž za listnatými stromy, nikdy nechoď za nízkými jehličnany". Hráče pak bude čekat série křižovatek, kde bude muset dojít správnou cestou, aby došel k vodníkovi. V případě špatné cesty dojde k sousedovi vodníka.
 
 ---
 

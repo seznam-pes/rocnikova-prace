@@ -10,10 +10,13 @@
 
   <ItemGroup>
     <None Remove="button.png" />
+    <None Remove="icon.png" />
     <None Remove="img\button.png" />
+    <None Remove="img\icon.png" />
+    <None Remove="img\logo.png" />
+    <None Remove="img\menubg.png" />
     <None Remove="img\placeholder.png" />
     <None Remove="img\scene1.jpg" />
-    <None Remove="img\scene1.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,15 +26,14 @@
 
   <ItemGroup>
     <Resource Include="button.png" />
+    <Resource Include="icon.png" />
     <Resource Include="img\button.png" />
+    <Resource Include="img\icon.png" />
+    <Resource Include="img\logo.png" />
+    <Resource Include="img\menubg.png" />
     <Resource Include="img\placeholder.png" />
 
-    <Resource Include="img\0\backdrop.png"/>
-
-    <Resource Include="img\scene1.png">
-
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="img\0\0\backdrop.png" />
   </ItemGroup>
 
 </Project>

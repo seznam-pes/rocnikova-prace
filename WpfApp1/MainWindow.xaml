@@ -7,70 +7,66 @@
         mc:Ignorable="d"
         PreviewKeyDown="EscMenu_KeyPress"
         ResizeMode="CanResize"
-        WindowStyle="None"
-        WindowState="Maximized"
-        Title="Hra">
-    <Viewbox Stretch="Fill">
-        <Grid Width="1920" Height="1080">
-            <Image Name="pozadi" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="Fill" Source="img/placeholder.png" Margin="0,0,0,0"/>
-            <Rectangle Panel.ZIndex="999" Name="rect" Visibility="Collapsed" Opacity="0" HorizontalAlignment="Stretch" Height="1080" Fill="Black" VerticalAlignment="Stretch" Width="1920"/>
+        WindowStyle="SingleBorderWindow"
+        Title="Hra" Icon="/icon.png">
+    <Canvas x:Name="main" Width="1920" Height="1080">
+        <Image Name="pozadi" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="Fill" Source="/img/0/0/backdrop.png" Margin="0,0,0,0"/>
+        <Rectangle Panel.ZIndex="999" Name="rect" Visibility="Collapsed" Opacity="0" HorizontalAlignment="Stretch" Height="1080" Fill="Black" VerticalAlignment="Stretch" Width="1920"/>
 
-			<Grid Name="title_menu" Visibility="Visible">
-				<Rectangle HorizontalAlignment="Stretch" Height="1080" Fill="Black" OpacityMask="#7F000000" VerticalAlignment="Stretch" Width="1920"/>
+        <Grid Name="title_menu" Visibility="Collapsed">
+            <Rectangle HorizontalAlignment="Stretch" Height="1080" Fill="Black" OpacityMask="#7F000000" VerticalAlignment="Stretch" Width="1920"/>
 
-				<Button Name="createbtn" Click="NewGame_Click" Margin="1156,55,251,764" Cursor="Hand">
-					<Grid>
-						<Image Source="/button.png" Margin="-26,-21,-41,-32"></Image>
-						<TextBlock TextWrapping="Wrap" Text="Nová hra" Height="193" Width="478" RenderTransformOrigin="0.509,0.111" TextAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Juice ITC" Margin="20,61,6,-32"/>
-					</Grid>
-				</Button>
-
-				<Button Name="existbtn" Click="Launch_Click" Margin="1156,404,251,404" Cursor="Hand">
-					<Grid>
-						<Image Source="/button.png" Margin="-26,-21,-41,-32"></Image>
-                        <TextBlock TextWrapping="Wrap" Text="Pokračovat" Height="193" Width="478" RenderTransformOrigin="0.509,0.111" TextAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Juice ITC" Margin="20,61,6,-32"/>
-					</Grid>
-				</Button>
-				<Button Name="quitbtn" Click="Quit_Click" Margin="1156,764,251,55" Cursor="Hand">
-				<Grid>
-					<Image Source="/button.png" Margin="-26,-21,-41,-32"></Image>
-					<TextBlock TextWrapping="Wrap" Text="Vypnout hru" Height="193" Width="478" RenderTransformOrigin="0.509,0.111" TextAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Juice ITC" Margin="20,61,6,-32"/>
-				</Grid>
-				</Button>
-			</Grid>
-
-            <Grid Name="pause_menu" Visibility="Collapsed">
-                <Rectangle HorizontalAlignment="Stretch" Height="1080" Fill="Black" OpacityMask="#7F000000" VerticalAlignment="Stretch" Width="1920"/>
-                <Button Name="continuebtn" Click="Continue_Click" Margin="703,255,703,599" Cursor="Hand">
-                    <Grid RenderTransformOrigin="0.542,0.568">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="89*"/>
-                            <RowDefinition Height="22*"/>
-                        </Grid.RowDefinitions>
-                        <Image Source="/button.png" Margin="-25,-26,-49,-26" Grid.RowSpan="2"></Image>
-                        <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Zpátky do hry" VerticalAlignment="Stretch" Height="211" Width="450" RenderTransformOrigin="0.509,0.111" TextAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Juice ITC" Margin="24,64,0,0" Grid.RowSpan="2"/>
-                    </Grid>
-                </Button>
-                <Button Name="quitbtn2" Click="Quit_Click" Margin="704,574,703,280" Cursor="Hand">
-                    <Grid>
-                        <Image Source="/button.png" Margin="-20,-21,-46,-32"></Image>
-                        <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Vypnout hru" VerticalAlignment="Stretch" Height="193" Width="478" RenderTransformOrigin="0.509,0.111" TextAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Juice ITC" Margin="26,61,0,0"/>
-                    </Grid>
-                </Button>
-            </Grid>
-
-            <Grid Name="game" Visibility="Collapsed" Margin="0,854,0,52">
-                <Rectangle HorizontalAlignment="Stretch" Height="250" Fill="Black" OpacityMask="#7F000000" VerticalAlignment="Center" Width="1868" Grid.ColumnSpan="2" Margin="26,0,0,0"/>
-                <Rectangle HorizontalAlignment="Left" Height="182" Fill="Black" OpacityMask="#7F000000" VerticalAlignment="Top" Width="845" Margin="0,-854,0,0"/>
-                <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="TextčččBlock" VerticalAlignment="Center" Foreground="#FFE8CA00" FontSize="72" Width="1868" Height="154" TextAlignment="Center" FontFamily="Juice ITC" Grid.ColumnSpan="2" Margin="26,0,0,0" />
+            <Button Name="createbtn" Click="NewGame_Click" Margin="1156,55,251,764" Cursor="Hand">
                 <Grid>
-                    <Rectangle HorizontalAlignment="Left" Height="160" Stroke="White" VerticalAlignment="Top" Width="160" StrokeThickness="10" Margin="10,-843,0,0"/>
-                    <Rectangle HorizontalAlignment="Left" Height="160" Stroke="White" VerticalAlignment="Top" Width="160" StrokeThickness="10" Margin="175,-843,0,0"/>
-                    <Rectangle HorizontalAlignment="Left" Height="160" Stroke="White" VerticalAlignment="Top" Width="160" StrokeThickness="10" Margin="340,-843,0,0"/>
-                    <Rectangle HorizontalAlignment="Left" Height="160" Stroke="White" VerticalAlignment="Top" Width="160" StrokeThickness="10" Margin="505,-843,0,0"/>
-                    <Rectangle HorizontalAlignment="Left" Height="160" Stroke="White" VerticalAlignment="Top" Width="160" StrokeThickness="10" Margin="670,-843,0,0"/>
+                    <Image Source="/button.png" Margin="-26,-21,-41,-32"></Image>
+                    <TextBlock TextWrapping="Wrap" Text="Nová hra" Height="193" Width="478" RenderTransformOrigin="0.509,0.111" TextAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Juice ITC" Margin="20,61,6,-32"/>
                 </Grid>
-            </Grid>
+            </Button>
+
+            <Button Name="existbtn" Click="Launch_Click" Margin="1156,404,251,404" Cursor="Hand">
+                <Grid>
+                    <Image Source="/button.png" Margin="-26,-21,-41,-32"></Image>
+                    <TextBlock TextWrapping="Wrap" Text="Pokračovat" Height="193" Width="478" RenderTransformOrigin="0.509,0.111" TextAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Juice ITC" Margin="20,61,6,-32"/>
+                </Grid>
+            </Button>
+            <Button Name="quitbtn" Click="Quit_Click" Margin="1156,764,251,55" Cursor="Hand">
+                <Grid>
+                    <Image Source="/button.png" Margin="-26,-21,-41,-32"></Image>
+                    <TextBlock TextWrapping="Wrap" Text="Vypnout hru" Height="193" Width="478" RenderTransformOrigin="0.509,0.111" TextAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Juice ITC" Margin="20,61,6,-32"/>
+                </Grid>
+            </Button>
+            <Image Source="/img/logo.png" HorizontalAlignment="Left" Height="566" Margin="129,0,0,0" VerticalAlignment="Center" Width="1017"/>
         </Grid>
-    </Viewbox>
+
+        <Grid Name="pause_menu" Visibility="Collapsed">
+            <Rectangle HorizontalAlignment="Stretch" Height="1080" Fill="Black" OpacityMask="#7F000000" VerticalAlignment="Stretch" Width="1920"/>
+            <Button Name="continuebtn" Click="Continue_Click" Margin="703,255,703,599" Cursor="Hand">
+                <Grid RenderTransformOrigin="0.542,0.568">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="89*"/>
+                        <RowDefinition Height="22*"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="/button.png" Margin="-25,-26,-49,-26" Grid.RowSpan="2"></Image>
+                    <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Zpátky do hry" VerticalAlignment="Stretch" Height="211" Width="450" RenderTransformOrigin="0.509,0.111" TextAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Juice ITC" Margin="24,64,0,0" Grid.RowSpan="2"/>
+                </Grid>
+            </Button>
+            <Button Name="quitbtn2" Click="Quit_Click" Margin="704,574,703,280" Cursor="Hand">
+                <Grid>
+                    <Image Source="/button.png" Margin="-20,-21,-46,-32"></Image>
+                    <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Vypnout hru" VerticalAlignment="Stretch" Height="193" Width="478" RenderTransformOrigin="0.509,0.111" TextAlignment="Center" FontSize="72" FontWeight="Bold" FontFamily="Juice ITC" Margin="26,61,0,0"/>
+                </Grid>
+            </Button>
+        </Grid>
+
+        <Canvas x:Name="game" Visibility="Visible" Margin="0,854,0,52" >
+            <Rectangle Name="dialoguebg" Visibility="Collapsed" HorizontalAlignment="Stretch" Height="250" Fill="Black" OpacityMask="#7F000000" VerticalAlignment="Center" Width="1868" Grid.ColumnSpan="2" Margin="26,0,0,0"/>
+            <Rectangle HorizontalAlignment="Left" Height="182" Fill="Black" OpacityMask="#7F000000" VerticalAlignment="Top" Width="511" Margin="0,-854,0,0"/>
+            <TextBlock Name="dialoguebar" Visibility="Collapsed" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="TextčččBlock" VerticalAlignment="Center" Foreground="#FFE8CA00" FontSize="72" Width="1868" Height="154" TextAlignment="Center" FontFamily="Juice ITC" Grid.ColumnSpan="2" Margin="26,0,0,0" />
+            <Grid>
+                <Rectangle HorizontalAlignment="Left" Height="160" Stroke="White" VerticalAlignment="Top" Width="160" StrokeThickness="10" Margin="10,-843,0,0"/>
+                <Rectangle HorizontalAlignment="Left" Height="160" Stroke="White" VerticalAlignment="Top" Width="160" StrokeThickness="10" Margin="175,-843,0,0"/>
+                <Rectangle HorizontalAlignment="Left" Height="160" Stroke="White" VerticalAlignment="Top" Width="160" StrokeThickness="10" Margin="340,-843,0,0"/>
+            </Grid>
+        </Canvas>
+    </Canvas>
 </Window>

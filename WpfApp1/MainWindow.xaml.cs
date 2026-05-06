@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualBasic.Devices;
 using NAudio.Wave;
+using NAudio.Wave.SampleProviders;
 using System.Configuration.Internal;
 using System.Diagnostics.Eventing.Reader;
 using System.IO;
@@ -26,9 +27,20 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            pozadi.Source = new BitmapImage(new Uri("pack://application:,,,/img/menubg.png"));
+            title_menu.Visibility = Visibility.Visible;
+            game.Visibility = Visibility.Collapsed;
+            animace = new Animations(this);
+            dialogy = new Dialogues();
+            sceny = new Scenes(this, dialogy, animace);
         }
 
-        int progress = 0;
+        Dialogues dialogy;
+        Animations animace;
+        Scenes sceny;
+        public List<Button> buttonlist = new List<Button>();
+
+        public int progress = 0;
         string str_progress = "0";
 
         public void WriteSave()
@@ -50,68 +62,52 @@ namespace WpfApp1
             }
         }
 
-        public void FadeIn(Action? onComplete = null)
+        public void CreateDialogueButton(int x, int y, int id, int sleep)
         {
-            rect.Visibility = Visibility.Visible;
-            rect.Opacity = 0;
-
-            var anim = new DoubleAnimation
-            {
-                From = 0,
-                To = 1,
-                Duration = TimeSpan.FromSeconds(3),
-                EasingFunction = new QuadraticEase
-                {
-                    EasingMode = EasingMode.EaseOut
-                }
-            };
-
-            anim.Completed += (s, e) =>
-            {
-                onComplete?.Invoke();
-            };
-
-            rect.BeginAnimation(UIElement.OpacityProperty, anim);
+            var button = new Button();
+            button.Opacity = 0;
+            buttonlist.Add(button);
+            button.Click += (sender, e) => LaunchDialogue(id, sleep);
+            main.Children.Add(button);
+            button.SetValue(Canvas.LeftProperty, x);
+            button.SetValue(Canvas.TopProperty, y);
         }
 
-        public void FadeOut(Action? onComplete = null)
+        public void CreateSceneButton(int x, int y, int id)
         {
-            var anim = new DoubleAnimation
-            {
-                From = 1,
-                To = 0,
-                Duration = TimeSpan.FromSeconds(3),
-                EasingFunction = new QuadraticEase
-                {
-                    EasingMode = EasingMode.EaseOut
-                }
+            var button = new Button() { Cursor = Cursors.Hand, Content = "TEST",
+                Width = 100,
+                Height = 50,
+                Background = Brushes.Red
             };
-
-            anim.Completed += (s, e) =>
-            {
-                rect.Visibility = Visibility.Collapsed;
-            };
-
-            rect.BeginAnimation(UIElement.OpacityProperty, anim);
+            //button.Opacity = 0;
+            buttonlist.Add(button);
+            button.Click += (sender, e) => pozadi.Source = new BitmapImage(new Uri($"pack://application:,,,/img/{progress}/{id}/backdrop.png"));
+            game.Children.Add(button);
+            Canvas.SetLeft(button, x);
+            Canvas.SetTop(button, y);
+            System.Diagnostics.Debug.WriteLine(buttonlist[0]);
         }
 
-        public void SwitchScene()
+        public void LaunchDialogue(int id, int sleep)
         {
-            FadeIn();
-            progress++;
-            WriteSave();
-            Thread.Sleep(3000);
-            FadeOut();
+            dialoguebg.Visibility = Visibility.Visible;
+            dialoguebar.Visibility = Visibility.Visible;
+            dialoguebar.Text = dialogy.dialogues[id];
+            Thread.Sleep(sleep);
+            dialoguebg.Visibility = Visibility.Collapsed;
+            dialoguebar.Visibility = Visibility.Collapsed;
         }
 
         public void NewGame_Click(object sender, RoutedEventArgs e)
         {
-            FadeIn(() =>
+            animace.FadeIn(() =>
             {
                 title_menu.Visibility = Visibility.Collapsed;
-                pozadi.Source = new BitmapImage(new Uri("pack://application:,,,/img/0/backdrop.png"));
+                pozadi.Source = new BitmapImage(new Uri("pack://application:,,,/img/0/0/backdrop.png"));
+                CreateSceneButton(1227, 569, 1);
                 game.Visibility = Visibility.Visible;
-                FadeOut();
+                animace.FadeOut();
             });
             File.WriteAllText("save.json", "0");
         }
@@ -119,12 +115,12 @@ namespace WpfApp1
         public void Launch_Click(object sender, RoutedEventArgs e)
         {
             ReadSave();
-            FadeIn(() =>
+            animace.FadeIn(() =>
             {
                 title_menu.Visibility = Visibility.Collapsed;
-                pozadi.Source = new BitmapImage(new Uri($"pack://application:,,,/img/{progress}/backdrop.png"));
+                pozadi.Source = new BitmapImage(new Uri($"pack://application:,,,/img/{progress}/0/backdrop.png"));
                 game.Visibility = Visibility.Visible;
-                FadeOut();
+                animace.FadeOut();
             });
         }
 
@@ -135,8 +131,16 @@ namespace WpfApp1
 
         public void Quit_Click(object sender, RoutedEventArgs e)
         {
-            WriteSave();
-            Application.Current.Shutdown();
+            if (title_menu.Visibility == Visibility.Collapsed)
+            {
+                WriteSave();
+                Thread.Sleep(4000);
+                Application.Current.Shutdown();
+            }
+            else
+            {
+                Application.Current.Shutdown();
+            }
         }
 
         public void EscMenu_KeyPress(object sender, KeyEventArgs e)

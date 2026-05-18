@@ -10,6 +10,7 @@ Hru vytvářím za pomocí jazyku C# a WPF.
 * 26.04.2026 - přidána možnost upravovat velikost okna
 * 01.05.2026 - save systém, redesign menu, přechody z menu
 * 15.05.2026 - přidány obrázky + nějaký další věci idk už
+* 18.05.2026 - upravena tlačítka + koncept inventáře
 
 
 ## 🖼️ SCÉNY:

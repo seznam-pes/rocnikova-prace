@@ -62,8 +62,9 @@ namespace WpfApp1
         BackgroundPath = "pack://application:,,,/img/0/2/backdrop.png",
         Buttons = new()
         {
-            new ButtonData {X = 1258, Y = 241, Width = 94, Height = 484, TargetSceneId = 0 },
-            new ButtonData {X = 953, Y = 395, Width = 67, Height = 85, TargetSceneId = 3 },
+            new ButtonData {X = 288, Y = 576, Width = 40, Height = 30, IsDialogue = true, DialogueId = 0, TargetSceneId = 2},
+            new ButtonData {X = 1258, Y = 271, Width = 94, Height = 460, TargetSceneId = 0 },
+            new ButtonData {X = 953, Y = 400, Width = 67, Height = 82, TargetSceneId = 3 },
         }
     },
 
@@ -71,6 +72,16 @@ namespace WpfApp1
     {
         Id = 3,
         BackgroundPath = "pack://application:,,,/img/0/3/dackbrop.png",
+        Buttons = new()
+        {
+            new ButtonData {X = 30, Y = 312, Width = 90, Height = 90, TargetSceneId = 2 },
+        }
+    },
+
+        new Scene
+    {
+        Id = 4,
+        BackgroundPath = "pack://application:,,,/img/0/4/backdrop.png",
         Buttons = new()
         {
             new ButtonData {X = 30, Y = 312, Width = 90, Height = 90, TargetSceneId = 2 },

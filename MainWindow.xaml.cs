@@ -5,6 +5,7 @@ using System.Configuration.Internal;
 using System.Diagnostics.Eventing.Reader;
 using System.IO;
 using System.Media;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -34,6 +35,12 @@ namespace WpfApp1
             animace = new Animations(this);
             dialogy = new Dialogues();
             sceny = new Scenes(this, dialogy, animace);
+        }
+
+        public class localAxis()
+        {
+            public int localX;
+            public int localY;
         }
 
         Dialogues dialogy;
@@ -118,8 +125,18 @@ namespace WpfApp1
             LoadScene(sceneId);
         }
 
+
         private void LoadScene(int sceneId)
         {
+            if (sceneId == 3)
+            {
+                trezor.Visibility = Visibility.Visible; game.Visibility = Visibility.Collapsed;
+            }
+            else {
+                trezor.Visibility = Visibility.Collapsed;
+                game.Visibility = Visibility.Visible;
+            }
+
             currentSceneId = sceneId;
             var scene = sceny.scenes.First(s => s.Id == sceneId);
 
@@ -227,6 +244,33 @@ namespace WpfApp1
                     }
                 }
             }
+        }
+
+        private const string spravnykod = "1234";
+        private string enteredCode = "";
+
+        public void Num_Click(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            enteredCode += btn.Tag.ToString();
+        }
+
+        public void Unlock_Click(object sender, RoutedEventArgs e)
+        {
+            if (enteredCode == spravnykod)
+            {
+                GoToScene(4);
+            }
+            else
+            {
+                WrongCode();
+            }
+        }
+
+        public void WrongCode()
+        {
+            enteredCode = "";
+            MessageBox.Show("Zadal jsi špatný kód.", "Chyba");
         }
     }
 }

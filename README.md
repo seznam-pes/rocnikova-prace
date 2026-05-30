@@ -11,6 +11,8 @@ Hru vytvářím za pomocí jazyku C# a WPF.
 * 01.05.2026 - save systém, redesign menu, přechody z menu
 * 15.05.2026 - přidány obrázky + nějaký další věci idk už
 * 18.05.2026 - upravena tlačítka + koncept inventáře
+* 29.05.2026 - vytvoření scén, dodělání trezor puzzlu
+* 30.05.2026 - dokončení celé první kapitoly
 
 
 ## 🖼️ SCÉNY:

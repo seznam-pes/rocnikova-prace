@@ -2,7 +2,7 @@
 Ročníková práce za 2. ročník. Téma: hra inspirovaná českou hrou Polda. \
 Hru vytvářím za pomocí jazyku C# a WPF.
 
-Odkaz na prezentaci: (https://sstebrnocz-my.sharepoint.com/:p:/g/personal/61787burda_student_sstebrno_cz/IQBB6apVYECgTKZsmK-QnqMyAYhQM6W1P-9oZhutpiUwCgw?e=NfsOf9)[https://sstebrnocz-my.sharepoint.com/:p:/g/personal/61787burda_student_sstebrno_cz/IQBB6apVYECgTKZsmK-QnqMyAYhQM6W1P-9oZhutpiUwCgw?e=NfsOf9]
+Odkaz na prezentaci: https://sstebrnocz-my.sharepoint.com/:p:/g/personal/61787burda_student_sstebrno_cz/IQBB6apVYECgTKZsmK-QnqMyAYhQM6W1P-9oZhutpiUwCgw?e=NfsOf9
 
 ## 📝 CHANGELOG:
 
